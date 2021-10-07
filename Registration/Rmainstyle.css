@@ -1,0 +1,174 @@
+*{
+     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: Exo, sans-serif;
+}
+a{text-decoration: none;}
+nav {
+    background-color: #43829A;
+    margin: 0;
+    overflow: hidden;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 60px;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li a {
+    color: white;
+    display: block;
+    line-height: 3em;
+    padding: 8px 30px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.department a{
+    text-decoration: none;
+    color:#4fa9ee;
+}
+nav ul li:first-child {
+    margin-right: auto;
+    padding-left: 8%;
+}
+nav ul li img {
+    display: block;
+    line-height: 3em;
+    margin: 8px 30px;
+}
+nav ul li a:hover {
+    background-color: #316a7f;
+}
+li img{
+    height: 40px;
+    width: auto;
+}
+nav ul li:last-child {
+    padding-right: 8%;
+}
+.edittable{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 530px;
+    height: 520px;
+    margin: auto;
+}
+.registration{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 340px;
+    height: 435px;
+    margin: auto;
+}
+div.registration label { 
+  padding-top: 7px; 
+  padding-right: .25em; 
+  width: 140px; 
+  text-align: left; 
+  float: left; 
+} 
+form #wrong{
+    float: right;
+    color: red;
+    font-size: 12px;
+    padding-top: 5px;
+}
+input:invalid {
+    border: 2px solid red;
+    background-color: #fff3f3;
+}
+input, select{
+    width: 200px;
+    height: 30px;
+    margin-top: 1px;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+}
+input[type="submit"]{
+    width: 100%;
+    background-color: #00bff3;
+    color: #f7f7f7;
+    border: 1px solid #00bff3;
+    margin-top: 0px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+}
+h1{
+    padding-bottom: 15px;
+    text-align: center;
+}
+ .wrong_levels, .wrong_dep{
+    display: none;
+    color: red;
+}
+.dropbtn {
+    background-color: #43829A;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #316a7f;
+    min-width: 150px;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #43829A;
+    height: 65px;
+    width: 150px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:  #316a7f;
+     
+}

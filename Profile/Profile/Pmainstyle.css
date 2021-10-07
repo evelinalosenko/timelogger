@@ -1,0 +1,329 @@
+*{
+     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: Exo, sans-serif;
+}
+a{text-decoration: none;}
+nav {
+    background-color: #43829A;
+    margin: 0;
+    overflow: hidden;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 60px;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li a {
+    color: white;
+    display: block;
+    line-height: 3em;
+    padding: 8px 30px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.department a{
+    text-decoration: none;
+    color:#4fa9ee;
+}
+nav ul li:first-child {
+    margin-right: auto;
+    padding-left: 100px;
+}
+nav ul li img {
+    display: block;
+    line-height: 3em;
+    margin: 8px 30px;
+}
+nav ul li a:hover {
+    background-color: #316a7f;
+}
+li img{
+    height: 40px;
+    width: auto;
+}
+nav ul li:last-child {padding-right: 100px;}
+.edittable, .edittable_2{
+    height: 650px;
+    width: 49%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.edittable{
+    float: left; 
+    display: -webkit-flex;
+    display: flex;
+}
+.edittable_2{float: right;}
+.allpad{
+    padding: 20px;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.multipletables{margin: 50px 120px 20px 120px;}
+.department{
+    width: 100%;
+    height: 15px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+.department form{
+    float:left;
+}
+.department .edit{
+    float:right;
+    font-size: 12px;
+}
+.department .edit p{
+    display: inline-block;
+    padding-right: 5px;
+}
+.department select{
+    height: 20px;
+    width: 160px;
+    border: 2px solid #cacaca;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    color: #878787;
+    font-family: Exo, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+}
+.workers {
+    border-collapse: collapse;
+    width: 100%;
+    height: 350px;
+    text-transform: uppercase;
+}
+.workers td, .workers th {
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+.workers td {
+    font-weight: 500;
+    font-size: 10px;
+    height: 20px;
+}
+.workers tr:nth-child(even){background-color: #fdf4f4;}
+.workers th:first-child{min-width:160px; text-align: left;}
+.workers tr:hover {background-color: #ddd;}
+.workers th {
+    height: 30px;
+    text-align: center;
+    background-color: #7a0026;
+    color: #f0f0f0;
+    font-size: 10px;
+    line-height: 11px;
+    font-weight: 500;
+    min-width: 19px;
+}
+.legend{
+    width: 100%;
+    height: 20px;
+}
+.legend div div{
+    width: 30px;
+    height: 20px;
+    margin-left: 20px;
+}
+.legend div p{
+    margin-left:5px;
+    margin-top:6px;
+    font-size: 14px;
+}
+.legend div{
+    margin-top: 5px;
+}
+.legend div div, .legend p{
+    float: left;
+}
+.scroll{
+    width:100%; 
+    height:485px; 
+    overflow:auto;
+}
+.box{
+    color: #f0f0f0;
+    font-size: 11px;
+    text-align: center;
+}
+.box{
+    color: #f0f0f0;
+    font-size: 11px;
+    text-align: center;
+}
+#blue{background-color:#00aeef; }
+#green{background-color: #00a651;}
+#weekend{
+    background-color:#ffffff; 
+    border: 1px solid #959595;
+}
+#vacation{background-color: #f26c4f;}
+#sick{background-color: #998675;}
+#nholiday{background-color: #ed1c24;}
+.notifications{
+    -webkit-flex: initial;
+    flex: initial;
+    width: 200px;
+    min-width: 100px;
+    background-color: #fb5252;
+    height: 100%;
+     }
+.date{
+    width: 500px;
+    margin: 0 auto;
+    font-family: Exo, sans-serif;
+}
+.date_1 .year{
+    height: 50px;
+    margin-top: 10px;
+}
+.date_1 .wdays{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.year{
+    margin: 0 auto;
+    height: 45px;
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
+}
+.year a{
+    display: inline;
+    font-size: 18px;
+    color:#878787;
+    text-decoration: none;
+}
+.wdays a{
+    color:#070816;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.wdays{margin-top: 5px;}
+a{
+    text-decoration: none;
+    color: #070816;
+}
+.notifications{
+    color: #f9f9f9;
+}
+.notifications .today_nr, .notifications .today_word{text-align: center;} 
+.notifications .today_nr{
+    font-size: 100px;
+    font-weight: 600;
+}
+.notifications .today_word{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: -10px;
+}
+.current_events{
+    margin: 20px;
+    font-size: 13px;
+    margin-top: 80px;
+}
+.current_events p{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.year #thisy{
+    font-size: 26px;
+    color:black;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin-top: -5px;
+}
+.months, .wdays{
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
+}
+.months{border-bottom: 2px solid #bbbaba;}
+.months a{color:#878787;}
+.months #today{
+    color:black;
+    font-weight: 500;
+}
+.workhours, .vacationhours{
+    width: 350px;
+    height: 100px;
+    margin-top: 40px;
+    display: inline-block; 
+}
+.workhours img, .vacationhours img{
+    width: auto;
+    height: 80px;
+    margin: 10px 10px 10px 15px;
+    float: left;
+}
+.worktext{
+    float: right;
+    color: white;
+    padding: 14px 25px 14px 10px;
+    text-align: right;
+}
+.worktext h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+.workhours{ 
+    background-color:#00aeef; 
+    margin-left: 120px;
+}
+.vacationhours{
+    background-color:#f26c4f; 
+    margin-left: 30px;
+}
+#blue{margin-left:0px;}
+.days { margin: 0;}
+.days div {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: #777;
+    height: 85px;
+    border: 1;
+    background: #ebebeb;
+}
+.date_1 .days div p {
+        padding: 5px 0 0 5px;
+}
+.days .active {border: 1px solid #ff8989; }
+.active .work_info{
+    width: 100%; 
+    height: 20px; 
+    color:white; 
+    padding: 3px;
+    display: table;
+    margin: 0;
+    text-align: center; 
+}
+.prevm{
+    background: #f9f9f9 !important;
+     color: #a0a0a0 !important;
+}
+@media screen and (max-width: 1440px){
+    .months a {font-size:11px;}
+    .wdays a {font-size:13px;}
+}

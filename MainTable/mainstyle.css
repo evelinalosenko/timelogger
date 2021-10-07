@@ -1,0 +1,464 @@
+*{
+     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: Exo, sans-serif;
+}
+a{text-decoration: none;}
+nav {
+    background-color: #43829A;
+    margin: 0;
+    overflow: hidden;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 60px;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li a {
+    color: white;
+    display: block;
+    line-height: 3em;
+    padding: 8px 30px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.department a{
+    text-decoration: none;
+    color:#4fa9ee;
+}
+nav ul li:first-child {
+    margin-right: auto;
+    padding-left: 8%;
+}
+nav ul li img {
+    display: block;
+    line-height: 3em;
+    margin: 8px 30px;
+}
+nav ul li a:hover {
+    background-color: #316a7f;
+}
+li img{
+    height: 40px;
+    width: auto;
+}
+nav ul li:last-child {
+    padding-right: 8%;
+}
+.edittable{
+    margin: 20px 80px 20px 80px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.allpad{
+    padding:20px;
+}
+.department{
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.department form{
+    float:left;
+}
+.department .edit{
+    float:right;
+}
+.department .edit p{
+    display: inline-block;
+    padding-right: 5px;
+}
+.department select {
+    height: 25px;
+    width: 150px;
+    border: 2px solid #cacaca;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    color: #878787;
+    font-family: Exo, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+.workers {
+    border-collapse: collapse;
+    width: 100%;
+    text-transform: uppercase;
+}
+.workers td, .workers th {
+    border: 1px solid #ddd;
+    padding: 3px;
+    min-width:47px;
+   
+}
+#worker{
+    border: none;
+}
+.workers td {
+    font-weight: 400px;
+    font-size: 12px;
+    line-height: 15px;
+    height: 35px;
+    
+}
+ .day{
+    height: 30px;
+    text-align: center;
+    background-color: #7a0026;
+    color: #f0f0f0;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 500;
+}
+gend{
+    width: 100%;
+    height: 20px;
+}
+
+.legend div div{
+    width: 30px;
+    height: 20px;
+    margin-left: 20px;
+}
+.legend div p{
+    margin-left:5px;
+    margin-top:6px;
+}
+.legend div{
+    margin-top: 50px;
+}
+.legend div div, .legend p{
+    float: left;
+}
+.scroll{
+    width:100%; 
+    height:705px; 
+    overflow:auto;
+}
+.btn{
+    color:#878787;
+}
+.clicked, .year .clicked {
+  color: black;
+}
+.box{
+    color: white;
+    display: none;
+    width: 110px;
+    height: 195px;
+    background-color: #43829A;
+}
+.close{
+    position: absolute;
+    left: 425px;
+    font-size: 17px;
+    top: 13px;
+    color: lightslategray;
+}
+.ok{
+    position: absolute;
+    width: 82px;
+    height: 23px;
+    left: 136px;
+    top: 380px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #7a0026;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.ok:hover,.cancele:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.cancele{
+    position: absolute;
+    left: 244px;
+    top: 380px;
+    width: 82px;
+    height: 23px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #7a0026; 
+    border: none;
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.add{
+    position: relative;
+    text-align: center;
+    font-family: Exo, sans-serif;
+    font-size: 13px;
+    text-transform: none;
+    border-bottom: 1px solid white;
+}
+.timepickerStart{
+   top: 57px;
+   left: 81px;
+}
+.timepickerEnd{
+    top: 57px;
+    left: 245px;
+}
+.timepickerBreakfast{
+    top: 102px;
+    left: 81px;
+}
+.timepickerExtraTime{
+    top: 102px;
+    left: 246px;
+}
+.datepicker_vacationstart{
+    left: 81px;
+    top: 178px;
+}
+.datepicker_vacationend{
+    left: 246px;
+    top: 178px;
+}
+.datepicker_vacationstart,.datepicker_vacationend,.datepicker_sickstart,.datepicker_sickend,.datepicker_freedaystart,.datepicker_freedayend{
+    position: fixed;
+    padding-left: 27px;
+    width: 140px;
+    height: 20px;
+    font-size: 16px;
+}
+.datepicker_freedaystart{
+    left: 81px;
+    top: 328px;
+}
+.datepicker_freedayend{
+    left: 246px;
+    top: 328px;
+}
+.datepicker_sickstart{
+    left: 81px;
+    top: 252px;
+}
+.datepicker_sickend{
+    left: 246px;
+    top: 252px;
+}
+.timepickerStart, .timepickerEnd, .timepickerBreakfast, .timepickerExtraTime {
+    position: fixed;
+    padding-left: 50px;
+    width: 140px;
+    height: 20px;
+    font-size: 16px;
+}
+.start{
+    left: 134px;
+    top: 40px;
+    color: grey;
+    font-weight: 749;
+    font-family: inherit;
+}
+.end{
+    left: 305px;
+    top: 40px;
+    color: grey;
+    font-weight: 749;
+    font-family: inherit;
+}
+.breakfast{
+    left: 116px;
+    top: 84px;
+    color: grey;
+    font-weight: 749;
+    font-family: inherit;
+}
+.extraTime{
+    left: 284px;
+    top: 84px;
+    color: grey;
+    font-weight: 749;
+    font-family: inherit;
+}
+.vacation_1{
+
+    color: grey;
+    font-weight: 749;
+    font-family: inherit;
+    left: 201px;
+    top: 136px;
+}
+.vacation_2{
+    color: grey;
+    font-weight: 749;
+    font-family: inherit;
+    left: 130px;
+    top: 162px;
+}
+.vacation_3{
+    color: grey;
+    font-weight: 749;
+    font-family: inherit;
+    left: 305px;
+    top: 162px;
+
+}
+.sick{
+    color: grey;
+    font-weight: 749;
+    font-family: inherit;
+    padding-left: 216px;
+    top: 211px;
+}
+.sick_start{
+    color: grey;
+    font-weight: 749;
+    font-family: inherit;
+    left: 130px;
+    top: 236px;
+}
+.sick_end{
+    color: grey;
+    font-weight: 749;
+    font-family: inherit;
+    left: 305px;
+    top: 236px;
+}
+.freeday{
+    color: grey;
+    font-weight: 749;
+    font-family: inherit;
+    left: 201px;
+    top: 286px;
+}
+.freeday_start{
+    color: grey;
+    font-weight: 749;
+    font-family: inherit;
+    left: 130px;
+    top: 312px;
+}
+.freeday_end{
+    color: grey;
+    font-weight: 749;
+    font-family: inherit;
+    left: 305px;
+    top: 312px;
+}
+.bad{
+    background-color:brown; 
+}
+.formatted{
+    background-color: chartreuse;
+}
+.extra{
+    background-color: aqua;
+}
+
+.none{
+    display: none;
+}
+.vacation_2,.vacation_1,.vacation_3,.extraTime,.breakfast,.end,.start,.sick,.sick_start,.sick_end,.freeday,.freeday_start,.freeday_end{
+    position: fixed;
+}
+#sick{background-color:#00aeef; }
+#green{background-color: #00a651;}
+#weekend{background-color:#ffffff; border: 1px solid #959595;}
+#vacation{background-color: #f26c4f;}
+
+#nholiday{background-color: #ed1c24;}
+.date{
+    width: 500px;
+    margin: 0 auto;
+    font-family: Exo, sans-serif;
+}
+.year{
+    margin: 0 auto;
+    width: 500px;
+    height: 45px;
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
+}
+.year a{
+    display: inline;
+    font-size: 18px;
+    color:#878787;
+    text-decoration: none;
+}
+.year #thisy{
+    font-size: 26px;
+    color:black;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin-top: -5px;
+}
+.months{
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    justify-content: space-around;
+    border-bottom: 2px solid #bbbaba;
+}
+.months {
+    color:#878787;
+}
+.months #today{
+    color:black;
+    font-weight: 500;
+}
+.box_new{
+    position: absolute;
+    width: 450px;
+    height: 418px;
+    background-color:  floralwhite;
+    box-shadow: 1px 1px 20px gray;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.add_time{
+    color: grey;
+    text-align: center;
+    margin-top: 13px;
+    text-decoration: none;
+}
+.vacation_box{
+    background-color: #43829A; 
+    width: 110px;
+    height: 195px;
+    color: white;
+}
+.er_1{
+    top: 273px;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: auto;
+    color: #7a0026;
+}
